@@ -1,0 +1,294 @@
+body {
+    background-color: #02010a;
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0;
+}
+
+header {
+    animation-duration: 3s;
+    animation-name: slidein;
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.headerLeft {
+    margin-left: 2%;
+    text-align: left;
+    text-shadow: 2px 2px #02010a;
+    width: 70%;
+}
+
+.headerRight {
+    margin-top: 1%;
+    margin-right: 2%;
+    text-align: right;
+    width: 30%;
+}
+
+#menu-principal {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#menu-principal a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu-principal a:hover {
+    text-decoration: underline;
+}
+
+#menu-principal a+a::before {
+    content: " | ";
+}
+
+figure {
+    margin: 0px;
+}
+
+figure img {
+    max-width: 100%;
+    border: solid 1px #ffffff;
+    box-shadow: 2px 2px #02010a;
+}
+
+.img1 {
+    margin: 0;
+    text-align: center;
+    background-color: #82c3a6;
+}
+
+.img1 img {
+    margin: 1%;
+    width: 80%;
+    height: 302px;
+}
+
+.img2 {
+    background-color: #d5c75f;
+    border: solid 1px;
+    display: flex;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.img2 img {
+    margin: 1%;
+    width: 55%;
+    height: 440px;
+}
+
+.img2 figure {
+    width: 50%;
+}
+
+#imgA {}
+
+#imgA:hover {
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+#imgB {}
+
+#imgB:hover {
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+.img {
+    background-color: #d5c75f;
+    border: solid 1px;
+    display: grid;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+
+.img3 {
+    display: flex;
+}
+
+.img3 figure {
+    width: 40%;
+}
+
+.img3 img {
+    margin: 1%;
+    width: 90%;
+    height: 195px;
+}
+
+#img3A {
+    -webkit-filter: blur(10px);
+    /* Chrome, Safari, Opera */
+    filter: blur(10px);
+}
+
+#img3B {
+    -webkit-filter: grayscale(100%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#img3C {
+    -webkit-filter: sepia(90%);
+    /* Chrome, Safari, Opera */
+    filter: sepia(90%);
+}
+
+.img4 {
+    display: flex;
+}
+
+.img4 figure {
+    width: 40%;
+}
+
+.img4 img {
+    margin: 1%;
+    width: 90%;
+    height: 195px;
+}
+
+#img4A {
+    -webkit-filter: grayscale(100%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#img4B {
+    -webkit-filter: invert(100%);
+    /* Chrome, Safari, Opera */
+    filter: invert(100%);
+}
+
+#img4C {
+    -webkit-filter: grayscale(100%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+footer {
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    color: #02010a;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+footer span {
+    font-size: 1.5em;
+}
+
+footer img {
+    width: 10%;
+    height: 10%;
+}
+
+.contacto {
+    width: 25%;
+    padding: 15px;
+    margin: 5px;
+}
+
+.terminos {
+    width: 25%;
+    padding: 15px;
+    margin: 5px;
+}
+
+.redes {
+    width: 25%;
+    padding: 15px;
+    margin: 5px;
+}
+
+.derechos {
+    width: 25%;
+    padding: 15px;
+    margin: 5px;
+}
+
+@keyframes slidein {
+    0% {
+        margin-top: 150%;
+    }
+    60% {
+        margin-top: 5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+@media (max-width:900px) {
+    header {
+        display: grid;
+    }
+    .headerLeft {
+        text-align: center;
+        width: 100%;
+    }
+    .headerRight {
+        text-align: center;
+        width: 100%;
+    }
+    .img2 {
+        display: grid;
+        text-align: center;
+    }
+    .img2 figure {
+        width: 100%;
+        text-align: center;
+    }
+    .img3 {
+        display: grid;
+        text-align: center;
+    }
+    .img3 figure {
+        width: 100%;
+        text-align: center;
+    }
+    .img4 {
+        display: grid;
+        text-align: center;
+    }
+    .img4 figure {
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        display: grid;
+    }
+    .contacto {
+        width: 100%;
+        padding: 5px;
+    }
+    .terminos {
+        width: 100%;
+        padding: 5px;
+    }
+    .redes {
+        width: 100%;
+        padding: 5px;
+    }
+    .derechos {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (min-width:901px) {}
